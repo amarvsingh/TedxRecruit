@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEDxSVV 20-21 Recruitment</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+            background-repeat: no-repeat;
+            font-family: sans-serif; 
+            background-attachment: fixed;
+            background-position: center;
+            margin-top: 40px;
+        }
+        .regform{
+            width: 800px;
+            background-color: rgb(255, 255, 255, 0.7);
+            margin: auto;
+            color: black;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            border-radius: 15px 15px 0px 0px;
+        }
+        .main{
+            background-color: rgb(255, 255, 255, 0.4);
+            width: 800px;
+            margin: auto;
+        }
+        form{
+            padding: 10px;
+        }
+        .name{
+            margin-left: 25px;
+            margin-top: 30px;
+            width: 125px;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;   
+        }
+        .fullname{
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0px 22px;
+            font-size: 16px;
+        }
+        .email{
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 480px;
+            border-radius: 6px;
+            padding: 0px 22px;
+            font-size: 16px;
+            color: #555;
+        }
+        .code{
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 480px;
+            border-radius: 6px;
+            padding: 0px 22px;
+            font-size: 16px;
+            color: #555;
+        }
+        .option{
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 480px;
+            height: 40px;
+            border-radius: 6px;
+            padding: 0px 22px;
+            font-size: 16px;
+            color: #555;
+            outline: none;
+            overflow: hidden;           
+        }
+        .option option{
+            font-size: 19px;
+        }
+        button{
+            background-color: rgb(255, 57, 57);
+            display: block;
+            margin: 0 auto;
+            border-radius: 12px;
+            border: 2px solid black;
+            padding: 14px 110px;
+            outline: none;
+            color: white;
+            cursor: pointer;
+            transition: 0.25px;
+        }
+        button:hover{
+            background-color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="regform">
+        <h1>TEDx SomaiyaVidyavihar 2020-2021</h1>
+    </div>
+    <div class="main">
+        <form>
+            <div id="name">
+                <h2 class="name">Name:</h2>
+                <input class="fullname" type="text" name="full_name"/>
+                <h2 class="name">Email:</h2>
+                <input class="email" type="email" name="email"/>
+                <h2 class="name">Phone:</h2>
+                <input class="code" type="text" name="phone"/>
+                <h2 class="name">College:</h2>
+                <select class="option" name="college">
+                    <option disabled="disabled" selected="selected">--Choose College</option>
+                    <option>College 1</option>
+                    <option>College 2</option>
+                    <option>College 3</option>
+                    <option>College 4</option>
+                    <option>College 5</option>
+                </select>
+                <h2 class="name">Role at TEDx:</h2>
+                <select class="option" name="college">
+                    <option disabled="disabled" selected="selected">--Choose Role</option>
+                    <option>Role 1</option>
+                    <option>Role 2</option>
+                    <option>Role 3</option>
+                    <option>Role 4</option>
+                    <option>Role 5</option>
+                </select><br>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
