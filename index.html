@@ -4,34 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEDxSVV 20-21 Recruitment</title>
-    <script>
-        function redirect(){
-            var fullname = document.getElementById("fullname").value;
-            var email = document.getElementById("email").value;
-            var local = document.getElementById("local").value;
-            var code = document.getElementById("code").value;
-            var contact = local.concat(code);
-            var college = document.getElementById("college").value;
-            var role = document.getElementById("role").value;
-            var url;
-            if (role == "Role 1"){
-                url = "Role1.html?fullname="+fullname+"&email="+email+"&phone="+contact+"&college="+college+"&role="+role;
-            }
-            else if (role == "Role 2"){
-                url = "role2.html?fullname="+fullname+"&email="+email+"&phone="+contact+"&college="+college+"&role="+role;
-            }
-            else if (role == "Role 3"){
-                url = "role3.html?fullname="+fullname+"&email="+email+"&phone="+contact+"&college="+college+"&role="+role;
-            }
-            else if (role == "Role 4"){
-                url = "role4.html?fullname="+fullname+"&email="+email+"&phone="+contact+"&college="+college+"&role="+role;
-            }
-            else if (role == "Role 5"){
-                url = "role5.html?fullname="+fullname+"&email="+email+"&phone="+contact+"&college="+college+"&role="+role;
-            }
-            window.location.href = url;
-        }
-    </script>
+        <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-database.js"></script>
+    <script src="./Model/redirect.js"></script>
     <link rel="stylesheet" type="text/css" href="./View/main.css">
 </head>
 <body>
@@ -68,7 +43,7 @@
                 </select><br>
             </div>
         </form>
-        <button id="submit1" onclick="redirect()">Submit</button>
+        <button id="submit1" onclick="validateAndRedirect()">Submit</button>
         <br>
     </div>
 </body>
