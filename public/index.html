@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEDxSVV 20-21 Recruitment</title>
-        <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
     <script src="./Model/redirect.js"></script>
     <link rel="stylesheet" type="text/css" href="./View/main.css">
 </head>
@@ -26,25 +27,41 @@
                 <h2 class="name">College:</h2>
                 <select class="option" name="college" id="college">
                     <option disabled="disabled" selected="selected">--Choose College</option>
-                    <option>College 1</option>
-                    <option>College 2</option>
-                    <option>College 3</option>
-                    <option>College 4</option>
-                    <option>College 5</option>
+                    <option>K J Somaiya College of Engineering</option>
+                    <option>K J Somaiya Institute of Management Studies and Research</option>
+                    <option>K J Somaiya Polytechnic</option>
+                    <option>K J Somaiya College of Arts and Commerce</option>
+                    <option>K J Somaiya College of Science and Commerce</option>
+                    <option>S K Somaiya Degree College of Arts, Science, and Commerce</option>
+                    <option>Other</option>
+                </select>
+                <h2 class="name">Year of study: </h2>
+                <select class="option" name="year" id="year">
+                    <option disabled="disabled" selected="selected">--Choose Year of study</option>
+                    <option>First Year</option>
+                    <option>Second Year</option>
+                    <option>Third Year</option>
+                    <option>Fourth Year</option>
+                    <option>Masters (First & Second year)</option>
                 </select>
                 <h2 class="name">Role at TEDx:</h2>
                 <select class="option" name="role" id="role">
                     <option disabled="disabled" selected="selected">--Choose Role</option>
-                    <option>Role 1</option>
-                    <option>Role 2</option>
-                    <option>Role 3</option>
-                    <option>Role 4</option>
-                    <option>Role 5</option>
+                    <option>Technology Specialist</option>
+                    <option>Web Designer</option>
+                    <option>Graphic Designer</option>
+                    <option>Social Media Marketing Managers</option>
+                    <option>Sponsorship & Experience</option>
+                    <option>Video Production</option>
+                    <option>Event producers and managers</option>
+                    <option>Communication Managers</option>
+                    <option>Editorial Laison</option>
                 </select><br>
             </div>
         </form>
         <button id="submit1" onclick="validateAndRedirect()">Submit</button>
         <br>
     </div>
+    <br>
 </body>
 </html>
