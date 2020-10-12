@@ -24,20 +24,17 @@ function validateAndRedirect(){
                 else if (role == "Social Media Marketing Managers"){
                     url = "role4.html?fullname="+fullname+"&email="+email+"&phone="+contact+"&college="+college+"&year="+year+"&role="+role;
                 }
-                else if (role == "Sponsorship & Experience"){
+                else if (role == "Content Writer"){
                     url = "role5.html?fullname="+fullname+"&email="+email+"&phone="+contact+"&college="+college+"&year="+year+"&role="+role;
                 }
                 else if (role == "Video Production"){
                     url = "role6.html?fullname="+fullname+"&email="+email+"&phone="+contact+"&college="+college+"&year="+year+"&role="+role;
                 }
-                else if (role == "Event producers and managers"){
+                else if (role == "Sponsorship & Experience"){
                     url = "role7.html?fullname="+fullname+"&email="+email+"&phone="+contact+"&college="+college+"&year="+year+"&role="+role;
                 }
-                else if (role == "Communication Managers"){
+                else if (role == "Event Experience Manager"){
                     url = "role8.html?fullname="+fullname+"&email="+email+"&phone="+contact+"&college="+college+"&year="+year+"&role="+role;
-                }
-                else if (role == "Editorial Laison"){
-                    url = "role9.html?fullname="+fullname+"&email="+email+"&phone="+contact+"&college="+college+"&year="+year+"&role="+role;
                 }
                 window.location.replace(url);
             }
